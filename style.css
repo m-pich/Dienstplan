@@ -1,0 +1,88 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    padding: 20px;
+    background: #f8f9fa;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 { text-align: center; color: #2c3e50; }
+
+.box {
+    background: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+#result {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.dienst { background: #e74c3c; color: white; padding: 12px; border-radius: 8px; }
+.frei { background: #2ecc71; color: white; padding: 12px; border-radius: 8px; }
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    background: #34495e;
+    color: white;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.monthGrid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-top: 15px;
+}
+
+.dayCell {
+    background: white;
+    padding: 5px;
+    border-radius: 6px;
+    text-align: center;
+    min-height: 50px;
+    position: relative;
+    font-size: 0.8rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.dayDienst { background: #e74c3c; color: white; }
+.dayFrei { background: #2ecc71; color: white; }
+.today { outline: 3px solid #3498db; font-weight: bold;}
+
+.noteIcon { position: absolute; bottom: 2px; right: 2px; font-size: 0.7rem; }
+
+#monthView, #halfYear { display: none; }
+
+/* Admin Bereich ganz dezent */
+.admin-area {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 0.6rem;
+    color: #ccc;
+}
+.admin-area input {
+    border: none;
+    background: transparent;
+    color: #ccc;
+    font-size: 0.6rem;
+}
